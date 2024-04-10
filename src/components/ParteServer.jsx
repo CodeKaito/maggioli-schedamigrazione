@@ -128,12 +128,3 @@ const ParteServer = () => {
 };
 
 export default ParteServer;
-
-{
-  /* <Form>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Example textarea</Form.Label>
-        <Form.Control as="textarea" rows={20} cols={20} />
-      </Form.Group>
-    </Form> */
-}

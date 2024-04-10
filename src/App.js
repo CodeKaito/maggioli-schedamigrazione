@@ -5,6 +5,8 @@ import Moduli from './components/Moduli';
 import Navbar from './components/Navbar';
 import ParteConfigurazione from './components/ParteConfigurazione';
 import ParteServer from './components/ParteServer';
+import ParteSicraweb from './components/ParteSicraweb';
+import ParteWebService from './components/ParteWebService';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Moduli />
       <ParteConfigurazione />
       <ParteServer />
+      <ParteSicraweb />
+      <ParteWebService />
     </Container>
   );
 }

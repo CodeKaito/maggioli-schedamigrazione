@@ -16,6 +16,10 @@ p {
   font-size: 12px;
 }
 
+li {
+  font-size: 12px;
+}
+
 input {
   width: 100%;
   border: none;
@@ -32,6 +36,7 @@ th.moduli, td.moduli {
 
 .form-control {
   padding: 0!important;
+  border: 1px solid transparent;
 }
 
 .form-control.parteserver {
