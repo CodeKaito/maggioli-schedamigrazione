@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p {
+  font-size: 12px;
+}
+
+input {
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+
+th.moduli, td.moduli {
+  font-size: 12px;
+}
+
+.table>:not(caption)>*>* {
+  padding: .1em!important;
+}
+
+.form-control {
+  padding: 0!important;
+}
+
+.form-control.parteserver {
+  border: 1px solid transparent;
+}
+
+textarea.form-control {
+  min-height: 0!important;
+}
