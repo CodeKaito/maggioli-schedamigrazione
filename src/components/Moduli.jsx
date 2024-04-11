@@ -3,15 +3,16 @@ import { Table } from 'react-bootstrap';
 
 const Moduli = () => {
   const [comune, setComune] = useState('');
+  const [savedComune, setSavedComune] = useState('');
 
   useEffect(() => {
     localStorage.setItem('comune', comune);
   }, [comune]);
 
   useEffect(() => {
-    const savedComune = localStorage.getItem('comune');
-    if (savedComune) {
-      setComune(savedComune);
+    const saved = localStorage.getItem('comune');
+    if (saved) {
+      setSavedComune(saved);
     }
   }, []);
 
@@ -44,7 +45,7 @@ const Moduli = () => {
             <td>
               <input
                 type="text"
-                value={comune}
+                value={savedComune}
                 onChange={handleComuneChange}
               />
             </td>
@@ -72,7 +73,7 @@ const Moduli = () => {
         <tbody>
           <tr>
             <td rowSpan={15} style={{ verticalAlign: 'middle' }}>S@W</td>
-            <td className='moduli'>J-Iride</td>
+            <td className='moduli' style={{ width: "10%" }}>J-Iride</td>
             <td>
               <input type="text"/>
             </td>
