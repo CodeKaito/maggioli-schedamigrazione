@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 
 const Moduli = () => {
+  const [comune, setComune] = useState('');
+
+  useEffect(() => {
+    localStorage.setItem('comune', comune);
+  }, [comune]);
+
+  useEffect(() => {
+    const savedComune = localStorage.getItem('comune');
+    if (savedComune) {
+      setComune(savedComune);
+    }
+  }, []);
+
+  const handleComuneChange = (e) => {
+    setComune(e.target.value);
+  };
 
   return (
     <div className='mt-5'>
@@ -28,6 +44,8 @@ const Moduli = () => {
             <td>
               <input
                 type="text"
+                value={comune}
+                onChange={handleComuneChange}
               />
             </td>
           </tr>

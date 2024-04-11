@@ -8,6 +8,7 @@ import ParteServer from './components/ParteServer';
 import ParteSicraweb from './components/ParteSicraweb';
 import ParteWebService from './components/ParteWebService';
 import ParteNote from './components/ParteNote';
+import Redazione from './components/Redazione';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <ParteSicraweb />
       <ParteWebService />
       <ParteNote />
+      <Redazione />
     </Container>
   );
 }
