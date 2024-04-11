@@ -7,6 +7,7 @@ import ParteConfigurazione from './components/ParteConfigurazione';
 import ParteServer from './components/ParteServer';
 import ParteSicraweb from './components/ParteSicraweb';
 import ParteWebService from './components/ParteWebService';
+import ParteNote from './components/ParteNote';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ParteServer />
       <ParteSicraweb />
       <ParteWebService />
+      <ParteNote />
     </Container>
   );
 }
